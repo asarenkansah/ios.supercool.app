@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperCool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="rCh-Xk-AdG">
+                                <rect key="frame" x="-125" y="-76" width="655" height="749"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuR-oU-nrj">
+                                <rect key="frame" x="94" y="319" width="187" height="30"/>
+                                <state key="normal" title="Make Me Super Cool"/>
+                                <connections>
+                                    <action selector="makemenotsouncool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="REZ-Jb-AA9"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Boom-App" translatesAutoresizingMaskIntoConstraints="NO" id="DXW-1S-NH3">
+                                <rect key="frame" x="67" y="47" width="240" height="128"/>
+                            </imageView>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Wanna be even cooler?" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="06m-Kl-3gO">
+                                <rect key="frame" x="103" y="419" width="168" height="30"/>
+                                <color key="textColor" red="0.93451345419999998" green="0.44358325339999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="makecool:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="GmL-9G-lom"/>
+                                    <action selector="makemenotsouncool:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fAc-la-nuQ"/>
+                                </connections>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgA-JS-yoa">
+                                <rect key="frame" x="94" y="533" width="46" height="30"/>
+                                <state key="normal" title="Yuh"/>
+                                <connections>
+                                    <action selector="makecooler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHF-5B-ifM"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8i-hT-8mN">
+                                <rect key="frame" x="235" y="533" width="46" height="30"/>
+                                <state key="normal" title="Nah"/>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="16212-NQHGKZ" translatesAutoresizingMaskIntoConstraints="NO" id="peS-3q-KkL">
+                                <rect key="frame" x="31" y="134" width="313" height="198"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ask_cool" destination="06m-Kl-3gO" id="Fyv-64-GCp"/>
+                        <outlet property="cool_bg" destination="rCh-Xk-AdG" id="qYt-pX-Lfr"/>
+                        <outlet property="cool_logo" destination="DXW-1S-NH3" id="VfZ-vw-2La"/>
+                        <outlet property="puppy" destination="peS-3q-KkL" id="VSL-Qt-MZc"/>
+                        <outlet property="uncool" destination="cuR-oU-nrj" id="Gh0-7l-fVH"/>
+                        <outlet property="yes" destination="RgA-JS-yoa" id="734-Lt-FLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="311.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="16212-NQHGKZ" width="1667" height="1667"/>
+        <image name="Boom-App" width="511" height="94"/>
+        <image name="space" width="600" height="600"/>
+    </resources>
+</document>
